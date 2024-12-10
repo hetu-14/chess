@@ -1,24 +1,31 @@
 {
-  "name": "chess-monorepo",
-  "private": true,
+  "name": "chess",
+  "version": "1.0.0",
+  "description": "chess game made by hetraj",
+  "main": "app.js",
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hetu-14/chess.git"
+  },
+  "keywords": [
+    "chess"
+  ],
+  "author": "Hetraj Solanki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hetu-14/chess/issues"
+  },
+  "homepage": "https://github.com/hetu-14/chess#readme",
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.8",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "prettier": "^3.2.5",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "yarn@1.22.21",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+    "tailwindcss": "^3.4.4"
+  }
 }
